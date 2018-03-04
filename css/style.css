@@ -1,0 +1,231 @@
+
+.header {
+    height: 95vh;
+    background-image:
+    url(../img/backgroung.jpg);
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
+}
+
+.text_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    display: block;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 1.8rem;
+    line-height: 1.5;
+    animation: moveInLeft 1s ease-out;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem 3rem 0 3rem;
+    box-sizing: border-box;
+}
+
+#Alert {
+    color: grey;
+    font-size: 2rem;
+    animation: moveInTop .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.secHeading {
+    text-align: center !important;
+    margin: 3rem 0 !important;
+}
+
+.secHeadingText {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+}
+
+#month,
+#year {
+    background-color: #ffffff;
+    color: #777777;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.results {
+    background-color: #f7f7f7;
+    padding: 15rem 0;
+    margin-top: -25vh;
+}
+
+
+.archive {
+    width: 28rem;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 4rem;
+    vertical-align: top;
+    margin-right: .5rem;
+
+}
+
+.archiveImg{
+    width: 100%;
+    height: 20rem;
+}
+
+.archiveTitle{
+    font-size: 1.9rem;
+    text-decoration: underline;
+}
+
+.archiveDescr{
+    font-size: 1.2rem;
+}
+
+.botton {
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.botton:link,
+.botton:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+}
+
+.botton:hover,
+#month:hover,
+#year:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.botton:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.botton::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: #ffffff;
+}
+
+.botton:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.BtnArchive {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    cursor:pointer;
+
+}
+
+.BtnArchive:link,
+.BtnArchive:visited{
+    font-size: 1.6rem;
+    color: #55c57a;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
+    transition: all .2s;
+}
+
+.BtnArchive:hover{
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(#000, .15);
+    transform: translateY(-2px);
+}
+
+.BtnArchive:active{
+    box-shadow: 0 .5rem 1rem rgba(#000, .15);
+    transform: translateY(0);
+}
+
+@media (max-width: 600px){
+    body{
+        padding: 0;
+    }
+ 
+    .title {
+        font-size: 3.1rem;
+        font-weight: 400;
+        letter-spacing: 2.5rem;
+        line-height: 1.4;
+    }
+
+    #Alert {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+    #month,
+    #year {
+        width: 12rem;
+        padding: .75rem 2rem;
+
+    }
+    .botton:link,
+    .botton:visited {
+        padding: .75rem 2rem;
+        border-radius: 10rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-right: 3rem;
+    }
+    .secHeadingText {
+        font-size: 2rem;
+    }
+   
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (min-width: 1800px) {
+}
